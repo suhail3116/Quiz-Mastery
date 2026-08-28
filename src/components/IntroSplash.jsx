@@ -77,7 +77,7 @@ export function IntroSplash({ onFinish }) {
           </div>
           <div style={{ textAlign: 'left' }}>
             <div style={{ fontSize: '26px', fontWeight: 900, letterSpacing: '1px', color: '#ffffff' }}>
-              DAIT QUIZ MASTERY
+              Dait Quiz Mastery
             </div>
             <div style={{ fontSize: '12px', fontWeight: 700, color: '#a5b4fc', letterSpacing: '2px', textTransform: 'uppercase' }}>
               Dhaanish Ahmed Institute of Technology Coimbatore

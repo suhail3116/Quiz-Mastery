@@ -219,72 +219,75 @@ export function ArenaView({ engine = {}, onViewChange, isAdmin }) {
           </div>
         </div>
 
-        {/* Team Selection Cards Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`, gap: '18px' }}>
-          {Array.from({ length: totalTeams }).map((_, i) => {
-            const name = teamNames[i] || `Team ${i + 1}`;
-            const color = teamColors[i] || '#4f46e5';
-            const isClaimedByOther = claimedTeams[i] !== undefined;
-            const teamProg = league.teamProgress?.[i];
-            const isFinished = teamProg?.completed === true;
+        {/* Team Selection Cards Grid: Claimed/Selected teams are GONE from this list! */}
+        {(() => {
+          const unclaimedIndices = Array.from({ length: totalTeams })
+            .map((_, idx) => idx)
+            .filter(idx => {
+              const isClaimed = claimedTeams[idx] !== undefined || claimedTeams[String(idx)] !== undefined;
+              const isCompleted = league.teamProgress?.[idx]?.completed === true;
+              return !isClaimed && !isCompleted;
+            });
 
+          if (unclaimedIndices.length === 0) {
             return (
-              <div
-                key={i}
-                className="admin-panel-card"
-                style={{
-                  border: isFinished ? '2px solid #ef4444' : `2px solid ${color}`,
-                  background: isFinished ? '#fef2f220' : 'var(--bg-card)',
-                  borderRadius: '20px',
-                  padding: '28px 20px',
-                  textAlign: 'center',
-                  boxShadow: 'var(--shadow-sm)',
-                  opacity: isFinished ? 0.7 : (isClaimedByOther ? 0.6 : 1),
-                  transition: 'all 0.3s ease'
-                }}
-              >
-                <div style={{ width: '56px', height: '56px', borderRadius: '18px', background: isFinished ? '#ef4444' : color, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '26px', fontWeight: 900, margin: '0 auto 16px auto', boxShadow: `0 6px 18px ${color}40` }}>
-                  {isFinished ? '⛔' : i + 1}
-                </div>
-
-                <h3 style={{ fontSize: '20px', fontWeight: 900, marginBottom: '6px', color: 'var(--text-main)' }}>
-                  {name}
+              <div className="admin-panel-card" style={{ textAlign: 'center', padding: '40px 24px', borderRadius: '20px', border: '2px dashed #cbd5e1' }}>
+                <div style={{ fontSize: '48px', marginBottom: '12px' }}>🎉</div>
+                <h3 style={{ fontSize: '22px', fontWeight: 900, marginBottom: '8px', color: 'var(--text-main)' }}>
+                  All Teams Have Been Claimed & Connected!
                 </h3>
-                
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '18px' }}>
-                  {buckets[i]?.length || 16} Questions &bull; Score: <b>{scores[i] || 0} pts</b>
-                </div>
-
-                {/* If team finished -> HIDE selection button and show 'Your chance is finished' */}
-                {isFinished ? (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                    <div style={{ background: '#fee2e2', border: '1.5px solid #ef4444', color: '#b91c1c', padding: '10px 14px', borderRadius: '999px', fontWeight: 900, fontSize: '13px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
-                      <span>⛔</span>
-                      <span>Your chance is finished</span>
-                    </div>
-                    <span style={{ fontSize: '12px', color: '#64748b', fontWeight: 700 }}>
-                      Final: {scores[i] || 0} pts recorded
-                    </span>
-                  </div>
-                ) : isClaimedByOther ? (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                    <div style={{ background: '#f1f5f9', color: '#64748b', padding: '8px 16px', borderRadius: '999px', fontWeight: 800, fontSize: '12px', border: '1px solid #cbd5e1' }}>
-                      🔒 Claimed on System {i + 1}
-                    </div>
-                  </div>
-                ) : (
-                  <button
-                    className="btn btn-primary btn-lg pulse-glow"
-                    onClick={() => handleSelectTeam(i)}
-                    style={{ width: '100%', background: color, borderColor: color, fontWeight: 900, borderRadius: '999px' }}
-                  >
-                    👉 Select {name}
-                  </button>
-                )}
+                <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>
+                  All {totalTeams} teams are actively selected across participant computers & phones.
+                </p>
               </div>
             );
-          })}
-        </div>
+          }
+
+          return (
+            <div style={{ display: 'grid', gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`, gap: '18px' }}>
+              {unclaimedIndices.map((i) => {
+                const name = teamNames[i] || `Team ${i + 1}`;
+                const color = teamColors[i] || '#4f46e5';
+
+                return (
+                  <div
+                    key={i}
+                    className="admin-panel-card"
+                    style={{
+                      border: `2px solid ${color}`,
+                      background: 'var(--bg-card)',
+                      borderRadius: '20px',
+                      padding: '28px 20px',
+                      textAlign: 'center',
+                      boxShadow: 'var(--shadow-sm)',
+                      transition: 'all 0.3s ease'
+                    }}
+                  >
+                    <div style={{ width: '56px', height: '56px', borderRadius: '18px', background: color, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '26px', fontWeight: 900, margin: '0 auto 16px auto', boxShadow: `0 6px 18px ${color}40` }}>
+                      {i + 1}
+                    </div>
+
+                    <h3 style={{ fontSize: '20px', fontWeight: 900, marginBottom: '6px', color: 'var(--text-main)' }}>
+                      {name}
+                    </h3>
+                    
+                    <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '18px' }}>
+                      {buckets[i]?.length || 16} Questions &bull; Score: <b>{scores[i] || 0} pts</b>
+                    </div>
+
+                    <button
+                      className="btn btn-primary btn-lg pulse-glow"
+                      onClick={() => handleSelectTeam(i)}
+                      style={{ width: '100%', background: color, borderColor: color, fontWeight: 900, borderRadius: '999px', padding: '12px 18px', fontSize: '15px' }}
+                    >
+                      👉 Select {name}
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })()}
       </div>
     );
   }

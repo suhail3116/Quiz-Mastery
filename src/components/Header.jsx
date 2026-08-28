@@ -55,7 +55,7 @@ export function Header({ settings = {}, gameState = {}, userRole = 'projector', 
         <div className="brand-section" onClick={() => onViewChange('arena')}>
           <div className="brand-logo">🚀</div>
           <div>
-            <h1 className="brand-title">DAIT QUIZ MASTERY</h1>
+            <h1 className="brand-title">Dait Quiz Mastery</h1>
             <div className="brand-subtitle">Dhaanish Ahmed Institute of Technology Coimbatore</div>
           </div>
         </div>
