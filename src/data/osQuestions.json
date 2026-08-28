@@ -1,0 +1,886 @@
+[
+  {
+    "id": "u1_1_q1",
+    "text": "What is the main role of an Operating System?",
+    "options": [
+      "Compile programs",
+      "Manage hardware and software resources",
+      "Design databases",
+      "Create websites"
+    ],
+    "correctIndex": 1,
+    "category": "OS Basics - General Concepts",
+    "explanation": "The primary role of an OS is to act as an intermediary between user applications and the raw hardware, managing CPU, memory, storage, and I/O devices."
+  },
+  {
+    "id": "u1_1_q2",
+    "text": "Which of the following is an example of a desktop operating system?",
+    "options": [
+      "Android",
+      "iOS",
+      "Windows",
+      "RTOS"
+    ],
+    "correctIndex": 2,
+    "category": "OS Basics - General Concepts",
+    "explanation": "Windows is a desktop/workstation operating system, whereas Android and iOS are mobile OSs."
+  },
+  {
+    "id": "u1_1_q3",
+    "text": "Which operating system is developed by Apple for iPhones?",
+    "options": [
+      "Android",
+      "Linux",
+      "Windows",
+      "iOS"
+    ],
+    "correctIndex": 3,
+    "category": "OS Basics - General Concepts",
+    "explanation": "iOS is Apple's proprietary mobile operating system designed specifically for iPhone devices."
+  },
+  {
+    "id": "u1_1_q4",
+    "text": "Which OS function organizes and retrieves files?",
+    "options": [
+      "Security",
+      "File Management",
+      "Scheduling",
+      "Buffering"
+    ],
+    "correctIndex": 1,
+    "category": "OS Basics - General Concepts",
+    "explanation": "File Management oversees directory structures, file allocation, access control, and retrieval on secondary storage."
+  },
+  {
+    "id": "u1_1_q5",
+    "text": "Which operating system is open-source and highly customizable?",
+    "options": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS"
+    ],
+    "correctIndex": 2,
+    "category": "OS Basics - General Concepts",
+    "explanation": "Linux is released under the GNU GPL, allowing users to modify, customize, and compile the kernel for any architecture."
+  },
+  {
+    "id": "u1_1_q18",
+    "text": "What is a process?",
+    "options": [
+      "A stored file",
+      "A running program",
+      "A device driver",
+      "A compiler"
+    ],
+    "correctIndex": 1,
+    "category": "OS Basics - General Concepts",
+    "explanation": "A process is a program in active execution with its own address space, program counter, and resources."
+  },
+  {
+    "id": "u1_1_q19",
+    "text": "Which process management function decides the next process to use the CPU?",
+    "options": [
+      "Scheduling",
+      "Buffering",
+      "Spooling",
+      "Authentication"
+    ],
+    "correctIndex": 0,
+    "category": "OS Basics - General Concepts",
+    "explanation": "CPU Scheduling selects an executable process from the ready queue and allocates CPU time to it."
+  },
+  {
+    "id": "u1_1_q20",
+    "text": "Which memory management technique uses disk space as extra memory?",
+    "options": [
+      "Paging",
+      "Virtual Memory",
+      "Buffering",
+      "Caching"
+    ],
+    "correctIndex": 1,
+    "category": "OS Basics - General Concepts",
+    "explanation": "Virtual Memory maps secondary storage space (swap/pagefile) as extensions of physical RAM."
+  },
+  {
+    "id": "u1_1_q21",
+    "text": "Which file operation removes a file?",
+    "options": [
+      "Read",
+      "Write",
+      "Delete",
+      "Create"
+    ],
+    "correctIndex": 2,
+    "category": "OS Basics - General Concepts",
+    "explanation": "Delete removes the directory entry and deallocates the disk blocks associated with the file."
+  },
+  {
+    "id": "u1_1_q22",
+    "text": "What acts as an interface between hardware and the OS?",
+    "options": [
+      "Shell",
+      "Driver",
+      "Compiler",
+      "Loader"
+    ],
+    "correctIndex": 1,
+    "category": "OS Basics - General Concepts",
+    "explanation": "A device driver translates generic OS commands into hardware-specific control signals for attached peripherals."
+  },
+  {
+    "id": "u1_1_q23",
+    "text": "Which technique manages print jobs in a queue?",
+    "options": [
+      "Paging",
+      "Spooling",
+      "Scheduling",
+      "Fragmentation"
+    ],
+    "correctIndex": 1,
+    "category": "OS Basics - General Concepts",
+    "explanation": "Spooling (Simultaneous Peripheral Operations On-Line) buffers printer jobs in disk queues for sequential processing."
+  },
+  {
+    "id": "u1_2_q7",
+    "text": "Which OS processes jobs in groups without user interaction?",
+    "options": [
+      "Batch OS",
+      "Mobile OS",
+      "Distributed OS",
+      "Embedded OS"
+    ],
+    "correctIndex": 0,
+    "category": "OS Structures & Types",
+    "explanation": "A Batch Operating System collects similar jobs into batches and processes them sequentially with zero interactive intervention."
+  },
+  {
+    "id": "u1_2_q8",
+    "text": "Which OS allows multiple CPUs to execute processes simultaneously?",
+    "options": [
+      "Batch OS",
+      "Time-Sharing OS",
+      "Multiprocessing OS",
+      "Embedded OS"
+    ],
+    "correctIndex": 2,
+    "category": "OS Structures & Types",
+    "explanation": "A Multiprocessing OS coordinates multiple physical processors sharing bus, clock, and memory to achieve true hardware parallelism."
+  },
+  {
+    "id": "u1_2_q9",
+    "text": "Which OS manages a group of networked computers as a single system?",
+    "options": [
+      "Mobile OS",
+      "Distributed OS",
+      "Batch OS",
+      "RTOS"
+    ],
+    "correctIndex": 1,
+    "category": "OS Structures & Types",
+    "explanation": "A Distributed Operating System presents multiple autonomous networked computing nodes as a single unified system."
+  },
+  {
+    "id": "u1_2_q10",
+    "text": "RTOS stands for:",
+    "options": [
+      "Real-Time Operating System",
+      "Runtime Operating Service",
+      "Remote Task Operating System",
+      "Real Task Operating Service"
+    ],
+    "correctIndex": 0,
+    "category": "OS Structures & Types",
+    "explanation": "RTOS stands for Real-Time Operating System, designed for environments where response time is bounded by strict timing deadlines."
+  },
+  {
+    "id": "u1_2_q11",
+    "text": "Which OS structure has no well-defined architecture?",
+    "options": [
+      "Layered",
+      "Modular",
+      "Simple Structure",
+      "Microkernel"
+    ],
+    "correctIndex": 2,
+    "category": "OS Structures & Types",
+    "explanation": "A Simple Structure (e.g. early MS-DOS) lacks distinct boundaries between application software, OS services, and hardware BIOS."
+  },
+  {
+    "id": "u1_2_q12",
+    "text": "Which operating system is an example of a simple structure?",
+    "options": [
+      "Linux",
+      "UNIX",
+      "Windows",
+      "MS-DOS"
+    ],
+    "correctIndex": 3,
+    "category": "OS Structures & Types",
+    "explanation": "MS-DOS is a classic example of simple monolithic structure without hardware-enforced protection levels."
+  },
+  {
+    "id": "u1_2_q13",
+    "text": "Which structure divides the OS into multiple layers?",
+    "options": [
+      "Monolithic",
+      "Layered",
+      "Windows",
+      "Simple"
+    ],
+    "correctIndex": 1,
+    "category": "OS Structures & Types",
+    "explanation": "In a Layered architecture, the OS is decomposed into hierarchical layers where layer N only utilizes services of lower layer N-1."
+  },
+  {
+    "id": "u1_2_q14",
+    "text": "Which OS structure uses dynamically loadable modules?",
+    "options": [
+      "Modular Structure",
+      "Monolithic Structure",
+      "Virtual Machine",
+      "Batch Structure"
+    ],
+    "correctIndex": 0,
+    "category": "OS Structures & Types",
+    "explanation": "Modular kernels (like modern Linux modules) dynamically insert kernel objects at runtime without recompiling the core kernel."
+  },
+  {
+    "id": "u1_2_q15",
+    "text": "VirtualBox is an example of:",
+    "options": [
+      "Modular Structure",
+      "Compiler",
+      "Simple Structure",
+      "Virtual Machine"
+    ],
+    "correctIndex": 3,
+    "category": "OS Structures & Types",
+    "explanation": "VirtualBox is a Type-2 hypervisor that creates and manages Virtual Machines on top of a host operating system."
+  },
+  {
+    "id": "u1_2_q16",
+    "text": "Which structure contains all services in one large kernel?",
+    "options": [
+      "Microkernel",
+      "Layered",
+      "Monolithic",
+      "Modular"
+    ],
+    "correctIndex": 2,
+    "category": "OS Structures & Types",
+    "explanation": "A Monolithic architecture executes all core OS subsystems (VFS, IPC, drivers, networking) inside a single large kernel space."
+  },
+  {
+    "id": "u1_2_q17",
+    "text": "Which OS structure runs non-essential services in user space?",
+    "options": [
+      "Monolithic",
+      "Layered",
+      "Microkernel",
+      "Simple"
+    ],
+    "correctIndex": 2,
+    "category": "OS Structures & Types",
+    "explanation": "Microkernels (like Mach or QNX) retain only minimal IPC, memory management, and low-level scheduling in kernel space, running drivers and servers in user space."
+  },
+  {
+    "id": "u1_2_q31",
+    "text": "Which OS structure allows services to be dynamically added to the kernel at runtime?",
+    "options": [
+      "Simple structure",
+      "Layered structure",
+      "Modular structure",
+      "Monolithic structure"
+    ],
+    "correctIndex": 2,
+    "category": "OS Structures & Types",
+    "explanation": "Modular structures utilize Loadable Kernel Modules (LKMs) to extend kernel capabilities dynamically on-demand."
+  },
+  {
+    "id": "u1_2_q32",
+    "text": "Which OS structure organizes components into layers where each layer uses services of the lower layer?",
+    "options": [
+      "Modular",
+      "Layered",
+      "Exokernel",
+      "Virtual Machine"
+    ],
+    "correctIndex": 1,
+    "category": "OS Structures & Types",
+    "explanation": "The Layered approach isolates abstractions such that Layer N calls functions exclusively from Layer N-1."
+  },
+  {
+    "id": "u1_3_q6",
+    "text": "In which era was UNIX introduced?",
+    "options": [
+      "1940s",
+      "1950s",
+      "1960s-1970s",
+      "2000s"
+    ],
+    "correctIndex": 2,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "UNIX was originally created in 1969-1971 at AT&T Bell Labs by Ken Thompson, Dennis Ritchie, and team."
+  },
+  {
+    "id": "u1_3_q24",
+    "text": "Which security mechanism verifies users through credentials?",
+    "options": [
+      "Authentication",
+      "Buffering",
+      "Scheduling",
+      "Compilation"
+    ],
+    "correctIndex": 0,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "Authentication validates the identity of users, processes, or devices through credentials before granting system access."
+  },
+  {
+    "id": "u1_3_q25",
+    "text": "Who created Linux?",
+    "options": [
+      "Dennis Ritchie",
+      "Ken Thompson",
+      "Linus Torvalds",
+      "Steve Jobs"
+    ],
+    "correctIndex": 2,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "Linus Torvalds announced and released the initial Linux kernel in 1991 while studying at the University of Helsinki."
+  },
+  {
+    "id": "u1_3_q26",
+    "text": "UNIX was originally developed at:",
+    "options": [
+      "Microsoft",
+      "Google",
+      "Bell Labs",
+      "Apple"
+    ],
+    "correctIndex": 2,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "UNIX was invented at AT&T Bell Laboratories in Murray Hill, New Jersey."
+  },
+  {
+    "id": "u1_3_q27",
+    "text": "Which UNIX component acts as the interface between user and kernel?",
+    "options": [
+      "Hardware",
+      "Shell",
+      "Driver",
+      "Memory"
+    ],
+    "correctIndex": 1,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "The Shell (e.g. bash, zsh, sh) is a command-line interpreter translating user inputs into system calls executed by the kernel."
+  },
+  {
+    "id": "u1_3_q28",
+    "text": "Which is a key feature of UNIX?",
+    "options": [
+      "Single-user capability",
+      "Multi-user capability",
+      "No file system",
+      "No multitasking"
+    ],
+    "correctIndex": 1,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "UNIX was architected from the ground up to support multiple concurrent users sharing system compute and storage resources."
+  },
+  {
+    "id": "u1_3_q29",
+    "text": "Which Linux layer contains device drivers?",
+    "options": [
+      "User Space",
+      "Shell",
+      "Kernel Space",
+      "GUI"
+    ],
+    "correctIndex": 2,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "In monolithic Linux kernels, device drivers execute directly within privileged Kernel Space (Ring 0)."
+  },
+  {
+    "id": "u1_3_q30",
+    "text": "Linux is licensed as:",
+    "options": [
+      "Proprietary",
+      "Closed Source",
+      "Open Source",
+      "Commercial Only"
+    ],
+    "correctIndex": 2,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "Linux is free and Open Source Software licensed under the GNU General Public License (GPLv2)."
+  },
+  {
+    "id": "u1_3_q33",
+    "text": "A company wants a free, open-source operating system for servers, cloud platforms, and development environments, with strong community support and frequent updates. Which OS is most suitable?",
+    "options": [
+      "UNIX",
+      "AIX",
+      "Solaris",
+      "Linux"
+    ],
+    "correctIndex": 3,
+    "category": "UNIX & Linux Specifics",
+    "explanation": "Linux distributions (Ubuntu, RHEL, Debian, Rocky) dominate enterprise cloud, container, and server workloads worldwide."
+  },
+  {
+    "id": "u2_1_q1",
+    "text": "What is the main purpose of a system call?",
+    "options": [
+      "Compile a program",
+      "Provide an interface between user programs and the operating system",
+      "Manage hardware directly",
+      "Create variables"
+    ],
+    "correctIndex": 1,
+    "category": "System Calls & Services",
+    "explanation": "System calls serve as the programmatic interface allowing user-space applications to request privileged services from the OS kernel."
+  },
+  {
+    "id": "u2_1_q2",
+    "text": "System calls act as a gateway between:",
+    "options": [
+      "RAM and ROM",
+      "User mode and Kernel mode",
+      "CPU and Memory",
+      "Compiler and Interpreter"
+    ],
+    "correctIndex": 1,
+    "category": "System Calls & Services",
+    "explanation": "Executing a system call triggers a software interrupt/trap that switches CPU execution privilege from User Mode to Kernel Mode."
+  },
+  {
+    "id": "u2_1_q3",
+    "text": "Which mode executes system calls?",
+    "options": [
+      "User mode",
+      "Kernel mode",
+      "Debug mode",
+      "Safe mode"
+    ],
+    "correctIndex": 1,
+    "category": "System Calls & Services",
+    "explanation": "System call service routines execute strictly in privileged Kernel Mode with unrestricted hardware access."
+  },
+  {
+    "id": "u2_1_q4",
+    "text": "Which system call is commonly used to display output on the screen?",
+    "options": [
+      "read()",
+      "open()",
+      "write()",
+      "close()"
+    ],
+    "correctIndex": 2,
+    "category": "System Calls & Services",
+    "explanation": "The POSIX write() system call writes bytes from a buffer to a file descriptor (such as STDOUT_FILENO = 1)."
+  },
+  {
+    "id": "u2_1_q5",
+    "text": "Which of the following is NOT a type of system call?",
+    "options": [
+      "Process Control",
+      "Memory Management",
+      "Device Management",
+      "Compiler Management"
+    ],
+    "correctIndex": 3,
+    "category": "System Calls & Services",
+    "explanation": "Compilers are user-space software tools, not core OS kernel services managed by direct system calls."
+  },
+  {
+    "id": "u2_2_q6",
+    "text": "A process is:",
+    "options": [
+      "A program stored on disk",
+      "A program in execution",
+      "A text editor",
+      "A compiler"
+    ],
+    "correctIndex": 1,
+    "category": "Process & Thread Management",
+    "explanation": "A process represents a program loaded into memory and actively executing with assigned CPU cycles and state."
+  },
+  {
+    "id": "u2_2_q7",
+    "text": "Which section of a process contains executable code?",
+    "options": [
+      "Heap",
+      "Stack",
+      "Text",
+      "Data section"
+    ],
+    "correctIndex": 2,
+    "category": "Process & Thread Management",
+    "explanation": "The Text segment (code segment) holds compiled binary machine instructions of the executable program."
+  },
+  {
+    "id": "u2_2_q8",
+    "text": "Which section stores global variables?",
+    "options": [
+      "Heap",
+      "Stack",
+      "Text",
+      "Data section"
+    ],
+    "correctIndex": 3,
+    "category": "Process & Thread Management",
+    "explanation": "The Data segment stores initialized and uninitialized (BSS) global and static variables."
+  },
+  {
+    "id": "u2_2_q9",
+    "text": "Dynamic memory allocation occurs in the:",
+    "options": [
+      "Stack",
+      "Heap",
+      "Text section",
+      "Register"
+    ],
+    "correctIndex": 1,
+    "category": "Process & Thread Management",
+    "explanation": "The Heap segment expands dynamically at runtime when functions like malloc(), calloc(), or new are invoked."
+  },
+  {
+    "id": "u2_2_q10",
+    "text": "Function parameters and local variables are stored in the:",
+    "options": [
+      "Heap",
+      "Stack",
+      "Data section",
+      "Cache"
+    ],
+    "correctIndex": 1,
+    "category": "Process & Thread Management",
+    "explanation": "The Stack allocates activation records containing function parameters, local variables, and return pointers."
+  },
+  {
+    "id": "u2_2_q11",
+    "text": "Which process state indicates that instructions are currently being executed?",
+    "options": [
+      "Ready",
+      "Waiting",
+      "Running",
+      "New"
+    ],
+    "correctIndex": 2,
+    "category": "Process & Thread Management",
+    "explanation": "A process in the Running state currently occupies the CPU and is actively executing instructions."
+  },
+  {
+    "id": "u2_2_q12",
+    "text": "A process waiting to be assigned to the CPU is in the:",
+    "options": [
+      "Ready state",
+      "Waiting state",
+      "Running state",
+      "New state"
+    ],
+    "correctIndex": 0,
+    "category": "Process & Thread Management",
+    "explanation": "Processes in the Ready state are loaded in memory and waiting in the ready queue for the CPU scheduler to allocate core time."
+  },
+  {
+    "id": "u2_2_q13",
+    "text": "Which process state indicates the process has finished execution?",
+    "options": [
+      "Ready",
+      "Running",
+      "Waiting",
+      "Terminated"
+    ],
+    "correctIndex": 3,
+    "category": "Process & Thread Management",
+    "explanation": "The Terminated (or exit) state indicates a process has completed execution or aborted, waiting for its parent to collect its exit status."
+  },
+  {
+    "id": "u2_2_q14",
+    "text": "PCB stands for:",
+    "options": [
+      "Process Control Block",
+      "Program Control Buffer",
+      "Process Communication Block",
+      "Processor Control Buffer"
+    ],
+    "correctIndex": 0,
+    "category": "Process & Thread Management",
+    "explanation": "PCB stands for Process Control Block (also task_struct in Linux), storing complete process state metadata."
+  },
+  {
+    "id": "u2_2_q15",
+    "text": "Which PCB field stores the address of the next instruction?",
+    "options": [
+      "Stack Pointer",
+      "Program Counter",
+      "Base Register",
+      "Cache Register"
+    ],
+    "correctIndex": 1,
+    "category": "Process & Thread Management",
+    "explanation": "The Program Counter (PC) stores the memory address of the next instruction to be fetched and executed."
+  },
+  {
+    "id": "u2_2_q16",
+    "text": "Context switching occurs when:",
+    "options": [
+      "A file is opened",
+      "CPU switches from one process to another",
+      "A program is compiled",
+      "Memory is allocated"
+    ],
+    "correctIndex": 1,
+    "category": "Process & Thread Management",
+    "explanation": "Context switching saves the current state of a running process and restores the state of another process to resume execution on the CPU."
+  },
+  {
+    "id": "u2_2_q17",
+    "text": "During a context switch, the process context is saved in the:",
+    "options": [
+      "RAM",
+      "Cache",
+      "PCB",
+      "Register only"
+    ],
+    "correctIndex": 2,
+    "category": "Process & Thread Management",
+    "explanation": "The CPU registers, stack pointers, and program counters are saved into the process's PCB entry in memory."
+  },
+  {
+    "id": "u2_2_q18",
+    "text": "A thread is:",
+    "options": [
+      "A program in execution",
+      "A basic unit of CPU utilization",
+      "A memory block",
+      "A scheduling algorithm"
+    ],
+    "correctIndex": 1,
+    "category": "Process & Thread Management",
+    "explanation": "A thread is a lightweight execution stream comprising a thread ID, program counter, register set, and a stack within a process."
+  },
+  {
+    "id": "u2_2_q19",
+    "text": "Threads of the same process share:",
+    "options": [
+      "Different memory spaces",
+      "Process memory and resources",
+      "Different CPUs only",
+      "Separate files only"
+    ],
+    "correctIndex": 1,
+    "category": "Process & Thread Management",
+    "explanation": "Peer threads inside the same process share the text section, data section, heap, and open file descriptors."
+  },
+  {
+    "id": "u2_2_q20",
+    "text": "Which threading model maps many user threads to one kernel thread?",
+    "options": [
+      "One-to-One",
+      "Many-to-One",
+      "Many-to-Many",
+      "Two-Level"
+    ],
+    "correctIndex": 1,
+    "category": "Process & Thread Management",
+    "explanation": "The Many-to-One model maps multiple user-level threads to a single kernel thread via a user-space thread library."
+  },
+  {
+    "id": "u2_2_q21",
+    "text": "Which threading model is used by Linux?",
+    "options": [
+      "One-to-One",
+      "Many-to-One",
+      "Many-to-Many",
+      "Two-Level"
+    ],
+    "correctIndex": 0,
+    "category": "Process & Thread Management",
+    "explanation": "Linux NPTL (Native POSIX Thread Library) employs a One-to-One threading model mapping each user thread to a kernel task (clone)."
+  },
+  {
+    "id": "u2_2_q22",
+    "text": "Which threading model maps many user threads to many kernel threads?",
+    "options": [
+      "Many-to-One",
+      "One-to-One",
+      "Many-to-Many",
+      "Two-Level"
+    ],
+    "correctIndex": 2,
+    "category": "Process & Thread Management",
+    "explanation": "The Many-to-Many model multiplexes a pool of user threads onto an equal or smaller number of kernel threads."
+  },
+  {
+    "id": "u2_3_q8",
+    "text": "Which of the following is a CPU scheduling criterion?",
+    "options": [
+      "Disk Size",
+      "CPU Utilization",
+      "File Size",
+      "Cache Size"
+    ],
+    "correctIndex": 1,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "Core scheduling criteria include CPU Utilization, Throughput, Turnaround Time, Waiting Time, and Response Time."
+  },
+  {
+    "id": "u2_3_q9",
+    "text": "Throughput refers to:",
+    "options": [
+      "Number of completed processes per unit time",
+      "Number of CPUs available",
+      "Memory utilization",
+      "Number of files processed"
+    ],
+    "correctIndex": 0,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "Throughput measures the rate of work done by calculating the number of processes that complete their execution per unit time."
+  },
+  {
+    "id": "u2_3_q10",
+    "text": "Which scheduling method allows a running process to be interrupted?",
+    "options": [
+      "Non-preemptive Scheduling",
+      "Batch Scheduling",
+      "Preemptive Scheduling",
+      "FCFS only"
+    ],
+    "correctIndex": 2,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "Preemptive scheduling allows the OS kernel or higher-priority tasks to forcibly take the CPU away from a currently executing process."
+  },
+  {
+    "id": "u2_3_q11",
+    "text": "In Non-preemptive scheduling, the CPU is released when the process:",
+    "options": [
+      "Arrives",
+      "Is interrupted",
+      "Terminates or waits for I/O",
+      "Changes priority"
+    ],
+    "correctIndex": 2,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "In non-preemptive scheduling, once the CPU is allocated to a process, it keeps the CPU until it either terminates or yields voluntarily for I/O."
+  },
+  {
+    "id": "u2_3_q12",
+    "text": "FCFS stands for:",
+    "options": [
+      "First Complete First Serve",
+      "First Come First Serve",
+      "First CPU First Schedule",
+      "Fast Come Fast Serve"
+    ],
+    "correctIndex": 1,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "FCFS stands for First-Come, First-Served, executing processes strictly in the chronological order of their arrival in the ready queue."
+  },
+  {
+    "id": "u2_3_q13",
+    "text": "FCFS scheduling follows which queue discipline?",
+    "options": [
+      "LIFO",
+      "Priority Queue",
+      "FIFO",
+      "Circular Queue"
+    ],
+    "correctIndex": 2,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "FCFS operates on a First-In, First-Out (FIFO) queue discipline."
+  },
+  {
+    "id": "u2_3_q14",
+    "text": "FCFS scheduling is:",
+    "options": [
+      "Preemptive",
+      "Non-preemptive",
+      "Priority-based",
+      "Round Robin"
+    ],
+    "correctIndex": 1,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "Standard FCFS is non-preemptive; a running process retains the CPU until completion or blocking."
+  },
+  {
+    "id": "u2_3_q15",
+    "text": "SJF stands for:",
+    "options": [
+      "Short Job First",
+      "Shortest Job First",
+      "Small Job Function",
+      "System Job First"
+    ],
+    "correctIndex": 1,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "SJF stands for Shortest Job First, which schedules the process with the smallest expected CPU burst time first."
+  },
+  {
+    "id": "u2_3_q16",
+    "text": "SJF scheduling selects the process with the:",
+    "options": [
+      "Highest priority",
+      "Longest burst time",
+      "Shortest burst time",
+      "Earliest completion time"
+    ],
+    "correctIndex": 2,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "SJF selects the process with the shortest CPU burst time, proving mathematically optimal for minimizing average waiting time."
+  },
+  {
+    "id": "u2_3_q17",
+    "text": "The preemptive version of SJF is known as:",
+    "options": [
+      "FCFS",
+      "Round Robin",
+      "SRTF",
+      "FIFO"
+    ],
+    "correctIndex": 2,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "SRTF (Shortest Remaining Time First) preempts the running process if a newly arrived process has a shorter remaining burst time."
+  },
+  {
+    "id": "u2_3_q18",
+    "text": "Round Robin scheduling uses a fixed:",
+    "options": [
+      "Burst Time",
+      "Arrival Time",
+      "Time Quantum",
+      "Completion Time"
+    ],
+    "correctIndex": 2,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "Round Robin assigns a fixed discrete time slice called a Time Quantum (or time slice) to each process in circular order."
+  },
+  {
+    "id": "u2_3_q19",
+    "text": "Round Robin scheduling is a:",
+    "options": [
+      "Non-preemptive algorithm",
+      "Preemptive algorithm",
+      "Priority algorithm only",
+      "Batch scheduling algorithm"
+    ],
+    "correctIndex": 1,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "Round Robin is preemptive by design because the timer interrupt forcibly preempts a process when its time quantum expires."
+  },
+  {
+    "id": "u2_3_q20",
+    "text": "A Gantt chart is used to:",
+    "options": [
+      "Store processes",
+      "Display process execution over time",
+      "Increase CPU speed",
+      "Allocate memory"
+    ],
+    "correctIndex": 1,
+    "category": "CPU Scheduling Algorithms",
+    "explanation": "A Gantt chart provides a horizontal timeline bar visualization of CPU scheduling illustrating start, execution, and finish times for processes."
+  }
+]
