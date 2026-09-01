@@ -6,6 +6,7 @@ import { Header } from './components/Header';
 import { ArenaView } from './components/ArenaView';
 import { TeamsEditView } from './components/TeamsEditView';
 import { QuestionsView } from './components/QuestionsView';
+import { TeamPdfExportView } from './components/TeamPdfExportView';
 import { BuzzerArena } from './components/BuzzerArena';
 import { AdminLogin } from './components/AdminLogin';
 import { AdminPanel } from './components/AdminPanel';
@@ -120,6 +121,14 @@ export default function App() {
           )}
           {currentView === 'questions' && (
             <QuestionsView engine={engine} isAdmin={isAdminAuthenticated} />
+          )}
+          {currentView === 'pdf-export' && (
+            <TeamPdfExportView 
+              engine={engine} 
+              isAdmin={isAdminAuthenticated} 
+              onAdminLoginSuccess={handleAdminLoginSuccess}
+              onViewChange={setCurrentView}
+            />
           )}
           {currentView === 'admin' && (
             isAdminAuthenticated ? (

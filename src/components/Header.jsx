@@ -150,6 +150,13 @@ export function Header({ settings = {}, gameState = {}, userRole = 'projector', 
               📚 Questions
             </button>
             <button 
+              className={`nav-tab ${currentView === 'pdf-export' ? 'active' : ''}`}
+              onClick={() => onViewChange('pdf-export')}
+              title="Download & Print Team Questions as PDF"
+            >
+              📄 PDF Export
+            </button>
+            <button 
               className={`nav-tab ${currentView === 'admin' ? 'active' : ''}`}
               onClick={() => onViewChange('admin')}
               title={userRole === 'admin' ? 'Admin Controls (Active on this computer)' : 'Admin Login (Enter password to access)'}
